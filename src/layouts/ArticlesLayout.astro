@@ -1,0 +1,13 @@
+---
+import Header from "../components/Header.astro";
+import "../styles/view-post.css";
+import GlobalLayout from "./GlobalLayout.astro";
+const {title, description} = Astro.props.frontmatter
+---
+
+<GlobalLayout title={title} description={description}>
+    <Header />
+    <section class="container-post">
+        <slot />
+    </section>
+</GlobalLayout>

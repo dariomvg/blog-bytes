@@ -1,0 +1,54 @@
+---
+import imgFlecha from "../assets/icons/icon-down.svg";
+import "../styles/menu-content.css";
+let currentPage = Astro.url.pathname
+---
+
+    <section id="section" class="aside-links ">
+      <div class="cont-title">
+        <h2 class="title-categories">Categorias</h2>
+        <img
+          src={imgFlecha.src}
+          alt="arrow menu content"
+          class="img-flecha"
+          width={20}
+          height={20}
+          loading="lazy"
+          id="arrow"
+        />
+      </div>
+      <div class="list-link">
+        <a
+        
+          href="/contenido/cursos"
+          class={`link-category ${currentPage === "/contenido/cursos" ? "active" : ""}`}>
+          Cursos
+          </a>
+        <a
+        
+          href="/contenido/articulos"
+          class={`link-category ${currentPage === "/contenido/articulos" ? "active" : "" }`}>
+          Artículos
+          </a>
+        <a
+        
+          href="/contenido/temas"
+          class={`link-category ${currentPage === "/contenido/temas" ? "active" : ""}`}>
+          Temas
+          </a>
+        <a
+        
+          href="/contenido/paquetes"
+          class={`link-category ${currentPage === "/contenido/paquetes" ? "active" : ""} `}>
+          Paquetes
+          </a>
+        <a
+        
+          href="/contenido/redes"
+          class={`link-category ${currentPage === "/contenido/redes" ? "active" : ""}`}>
+          Redes
+          </a>
+      </div>
+    </section>
+
+<script src="../libs/openMenuContent.js" />

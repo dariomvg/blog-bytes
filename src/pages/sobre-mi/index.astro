@@ -1,0 +1,34 @@
+---
+import iconInstagram from "../../assets/icons/icon-instagram.png";
+import iconLinkendin from "../../assets/icons/icon-linkedin.png";
+import GlobalLayout from "../../layouts/GlobalLayout.astro";
+import "./aboutMe.css";
+---
+
+<GlobalLayout title="Sobre mí" description="Información | Contacto | Personal">
+    <section class="wrapper-about">
+      <section class="section-about">
+        <h1 class="title-about">Dario Martinez</h1>
+        <p class="subtitle-about">
+          Programador y Desarrollador Web
+        </p>
+        <p class="text-about">
+          Construyo aplicaciones y páginas dinámicas, rapidas y óptimas. me
+          gusta especializarme en un stack(MERN), pero siempre viendo las últimas
+          novedades del mercado, tecnologías que demandan más y así aprender lo
+          necesario.
+        </p>
+        <div class="apps-about">
+          <a href="https://www.instagram.com/dariomartinezgod/" target="_BLANK" rel="noreferrer" class="link-app">
+            <img src={iconInstagram.src} alt="icon instagram" width={40} height={40} loading="lazy" />
+          </a>
+          <a href="https://www.linkedin.com/in/dariomvg" target="_BLANK" rel="noreferrer" class="link-app">
+            <img src={iconLinkendin.src} alt="icon linkedin" width={40} height={40} loading="lazy" />
+          </a>
+        </div>
+      </section>
+    </section>
+
+</GlobalLayout>
+
+

@@ -1,0 +1,21 @@
+---
+import iconArrow from "../assets/icons/icon-arrow.png";
+import "../styles/section-cards-main.css";
+const {title, route} = Astro.props 
+---
+
+
+    <section class="container-cards">
+      <h2 class="title-container">{title}</h2>
+      <div class="list-cards"><slot /></div>
+      <a href={`/${route}`} class="link-more">
+        Ver todo
+        <img
+          src={iconArrow.src}
+          alt="arrow link"
+          width={20}
+          height={20}
+          loading="lazy"
+        />
+      </a>
+    </section>

@@ -1,0 +1,20 @@
+---
+import CardRouteTemas from "../../components/CardRouteTemas.astro";
+import { temas } from "../../utils/data-topics";
+import GlobalLayout from "../../layouts/GlobalLayout.astro";
+import "./topics.css"; 
+---
+
+<GlobalLayout title="Temas" description="Lista de temas útiles">
+    <section class="container-temas">
+      <h1 class="title-temas">Temas</h1>
+
+      <section class="all-topics">
+          {temas && 
+            temas.map((item) => <CardRouteTemas item={item} /> )
+          }
+      </section>
+    </section>
+  
+</GlobalLayout>
+

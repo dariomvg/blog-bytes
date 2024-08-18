@@ -1,0 +1,14 @@
+---
+import CardRouteArticles from "../../../components/CardRouteArticles.astro"
+import { articulos } from "../../../utils/data-articles"
+import ContentLayout from "../../../layouts/ContentLayout.astro";
+
+import "./articles.css"
+---
+
+<ContentLayout title="Contenido | Artículos" description="Lista de artículos">
+      <section class="section-routes-articles">
+        {articulos && articulos.map((item) => <CardRouteArticles  item={item} />)}
+    </section>
+</ContentLayout>
+

@@ -1,0 +1,29 @@
+.card-route-tema {
+    width: 300px;
+    height: 200px;
+    background-color: #16181d;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    border: 1px solid #3e038b;
+
+  }
+
+  .text-tema {
+    color: #929292;
+    overflow-y: hidden;
+  }
+  .link-tema {
+    
+    font-size: 18px;
+    text-decoration: none;
+    color: #1963ed;
+    height: 20px;
+    text-align: center;
+  }
+  .link-tema:hover {
+    color: #517EFF;
+  }

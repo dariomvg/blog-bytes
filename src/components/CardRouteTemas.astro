@@ -1,0 +1,15 @@
+---
+import "../styles/card-topic.css"
+  const { item } = Astro.props
+  const { title, text, link } = item
+---
+
+    <div class="card-route-tema">
+        <h2 class="title-tema">{title}</h2>
+        <p class="text-tema">{text}</p>
+        <a href={link} target="_BLANK" class="link-tema">
+          Ver más
+        </a>
+      
+    </div>
+

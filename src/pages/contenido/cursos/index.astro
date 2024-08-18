@@ -1,0 +1,13 @@
+---
+import CardRouteCurso  from "../../../components/CardRouteCurso.astro";
+import { cursos } from "../../../utils/data-courses";
+import ContentLayout from "../../../layouts/ContentLayout.astro";
+import "./courses.css";
+---
+<ContentLayout title="Contenido | Cursos" description="Lista de cursos">
+      <section class="section-routes-courses">
+      {cursos &&
+        cursos.map((item) => <CardRouteCurso item={item} />)}
+    </section>
+</ContentLayout>
+

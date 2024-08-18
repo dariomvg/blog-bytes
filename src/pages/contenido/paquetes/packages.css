@@ -1,0 +1,17 @@
+
+
+.section-routes-packages {
+  padding: 80px 10px 10px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 795px) {
+  .section-routes-packages {
+    padding-top: 16px;
+  }
+}

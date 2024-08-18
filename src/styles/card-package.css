@@ -1,0 +1,32 @@
+.card-route-paquete {
+    height: 160px;
+    width: 300px;
+    background-color: #16181d;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #3e038b;
+
+    border-radius: 10px;
+  }
+  .title-paquete {
+    font-size: 20px;
+  }
+  .text-paquete {
+    text-align: center;
+    color: #929292;
+    overflow-y: auto;
+  }
+  
+  .link-paquete {
+    font-size: 18px;
+    text-decoration: none;
+    color: #1963ed;
+  }
+  .link-paquete:hover {
+    color: #517EFF;
+
+  }

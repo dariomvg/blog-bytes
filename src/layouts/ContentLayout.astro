@@ -1,0 +1,15 @@
+---
+import MenuContent from "../components/MenuContent.astro";
+import "../styles/globals-content.css";
+import GlobalLayout from "./GlobalLayout.astro";
+const {title, description} = Astro.props
+---
+
+<GlobalLayout title={title} description={description}>
+        <section class="wrapper-content">
+        <MenuContent />
+        <section class="nav-routes"><slot /></section>
+      </section>
+</GlobalLayout>
+
+

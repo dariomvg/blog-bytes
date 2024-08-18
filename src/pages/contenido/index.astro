@@ -1,0 +1,23 @@
+---
+import imgSearch from "../../assets/images/image-search.svg";
+import "./content.css";
+import ContentLayout from "../../layouts/ContentLayout.astro";
+import { Image } from 'astro:assets';
+
+---
+
+<ContentLayout title="Contenido" description="Todo el contenido lo puedes encontrar aquí">
+    <section class="section-routes-landing">
+      <div>
+        <h1 class="title-search">Busca cursos, temas y más...</h1>
+        <Image
+          src={imgSearch}
+          alt="search main content"
+          width={400}
+          height={300}
+          loading="lazy"
+        />
+      </div>
+    </section>
+</ContentLayout>
+

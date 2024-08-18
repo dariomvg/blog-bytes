@@ -1,0 +1,16 @@
+---
+import { posts } from "../../utils/posts";
+import Post from "../../components/Post.astro";
+import "./posts.css";
+import GlobalLayout from "../../layouts/GlobalLayout.astro";
+---
+
+<GlobalLayout title="Posts | artículos" description= "Hay variedad de artículos o posts sobre diversos temas en desarrollo que te ayudarán el día a día.">
+            <section class="section-posts"> 
+            <h1 class="title-posts">Posts sobre tecnología</h1>
+            <section class="container-posts">
+                {posts.map((post) => <Post post={post} />)}
+            </section>
+            <p class="title-prox">proxímamente más</p>
+        </section>
+</GlobalLayout>

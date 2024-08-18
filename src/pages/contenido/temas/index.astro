@@ -1,0 +1,13 @@
+---
+import { temas } from "../../../utils/data-topics";
+import  CardRouteTemas from "../../../components/CardRouteTemas.astro";
+import ContentLayout from "../../../layouts/ContentLayout.astro";
+import "./topics.css";
+---
+
+<ContentLayout title="Contenido | Temas" description="Lista de temas">
+      <section class="section-routes-topics">
+      {temas &&
+        temas.map((item) => <CardRouteTemas item={item} />)}
+    </section>
+</ContentLayout>

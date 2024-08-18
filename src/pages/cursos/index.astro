@@ -1,0 +1,21 @@
+---
+import CardRouteCurso from "../../components/CardRouteCurso.astro";
+import { cursos } from "../../utils/data-courses";
+import GlobalLayout from "../../layouts/GlobalLayout.astro";
+import "./courses.css";
+---
+
+<GlobalLayout title="cursos" description="lista de cursos útiles">
+    <section class="container-courses">
+      <section class="section-filters">
+        <h1 class="title-courses">Cursos</h1>
+      </section>
+      <section class="all-courses">
+        {cursos &&
+          cursos.map((item) => (
+            <CardRouteCurso item={item} />
+          ))}
+      </section>
+    </section>
+  
+</GlobalLayout>

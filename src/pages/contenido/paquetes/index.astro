@@ -1,0 +1,12 @@
+---
+import { paquetes } from "../../../utils/data-packages";
+import "./packages.css";
+import ContentLayout from "../../../layouts/ContentLayout.astro";
+import CardRoutePackages from "../../../components/CardRoutePackages.astro";
+---
+<ContentLayout title="Contenido | Paquetes " description="Lista de paquetes">
+      <section class="section-routes-packages">
+        {paquetes && paquetes.map((item) => <CardRoutePackages  item={item} />)}
+    </section>
+</ContentLayout>
+

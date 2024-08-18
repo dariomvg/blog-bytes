@@ -1,0 +1,25 @@
+.container-temas {
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  color: #fff;
+}
+.title-temas {
+  font-size: 30px;
+  padding: 14px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.all-topics {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+}
+

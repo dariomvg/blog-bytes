@@ -1,0 +1,11 @@
+---
+import "../styles/card-package.css";
+const {item} = Astro.props
+const {title, text, link} = item; 
+---
+
+    <div class="card-route-paquete" >
+      <h2 class="title-paquete">{title}</h2>
+      <p class="text-paquete">{text}</p>
+      <a href={link} target="_BLANK" class="link-paquete">Ver más</a>
+    </div>

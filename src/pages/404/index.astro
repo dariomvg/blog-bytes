@@ -1,0 +1,23 @@
+---
+import img404 from "../../assets/images/image-404.svg"
+import GlobalLayout from "../../layouts/GlobalLayout.astro"
+import "./notFound.css"
+---
+<GlobalLayout>
+    <div class="container-404">
+      <img
+        src={img404.src}
+        alt="image 404"
+        width={500}
+        height={450}
+        loading="lazy"
+      />
+      <p class="title-404">
+        <b>ERROR-404:</b> Página no encontrada, revisa la ruta y vuelve a
+        intentarlo
+      </p>
+    </div>
+
+
+</GlobalLayout>
+

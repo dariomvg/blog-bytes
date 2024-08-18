@@ -1,0 +1,59 @@
+.container-post {
+  padding: 80px 10px 10px 10px;
+  width: 70%;
+  height: 100vh;
+  overflow-y: auto;
+  margin: auto;
+.return-page {
+  color: rgb(255, 255, 255);
+}
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 10px 50px 10px;
+  }
+  h2 {
+    color: #d5d5d5;
+    padding-bottom:14px ;
+  }
+  h3 {
+    color: #d5d5d5;
+    padding-bottom:6px ;
+
+  }
+
+  li {
+    color: #ddd;
+  }
+
+  p {
+    color: #b3b2b2;
+    padding: 8px 0;
+  }
+
+  img {
+    margin: auto;
+    border-radius: 5px;
+  }
+
+  code {
+    display: flex;
+    gap: 10px;
+    background-color: #333333;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+  }
+
+  pre {
+    padding: 10px 0;
+  }
+
+  a {
+    color: #00bfff;
+  }
+  strong {
+    color: #eee;
+  }
+}

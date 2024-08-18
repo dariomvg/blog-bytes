@@ -1,0 +1,85 @@
+---
+import GlobalLayout from "../layouts/GlobalLayout.astro"
+import SectionCardsMain from "../components/SectionCardsMain.astro"
+import Footer from "../components/Footer.astro"
+import  CardRouteCurso  from "../components/CardRouteCurso.astro"
+import  CardRouteTemas  from "../components/CardRouteTemas.astro"
+import  CardRoutePackages  from "../components/CardRoutePackages.astro"
+import { temas } from "../utils/data-topics"
+import { cursos } from "../utils/data-courses"
+import { paquetes } from "../utils/data-packages"
+import imgFondo from "../assets/images/mockup.svg"
+import { Image } from 'astro:assets';
+import "./main.css"
+---
+
+<script src="../libs/typeWriter.js" />
+
+<GlobalLayout title="Bytes - cursos, artículos, paquetes NPM de ayuda" description="Blog donde podrás encontrar cursos, temas, artículos y más sobre desarrollo web y programación que te ayudarán en tu camino de aprendizaje">
+    <main class="container-home">
+      <section class="cont-home">
+        <div class="box-home">
+          <h1 class="title-home">
+            Blog sobre programación y desarrollo web
+          </h1>
+          <div class="efects_titles">
+            <h1 id="text"></h1><span id="cursor" class="cursor">|</span>
+          </div>
+          <p class="text-home">
+            En este blog encontrarás recursos IT como lenguajes de programación,
+            frameworks, dependencias, temas y muchos más temas de mucha ayuda
+          </p>
+        </div>
+        <Image
+          src={imgFondo}
+          alt="imagen principal de inicio"
+          class="mockup"
+          width="600"
+          height="400"
+          loading="eager"
+        />
+        <div class="background-main one"></div>
+      </section>
+
+      <section class="cont-details">
+        <h2 class="subtitle-home">Algunas secciones dentro del blog</h2>
+
+        <SectionCardsMain title="Cursos" route="cursos">
+          {cursos &&
+            cursos
+              .slice(0, 3)
+              .map((item) => <CardRouteCurso item={item} />)}
+        </SectionCardsMain>
+
+        <SectionCardsMain title="Temas" route="temas">
+          {temas &&
+            temas
+              .slice(0, 3)
+              .map((item) => <CardRouteTemas item={item} />)}
+        </SectionCardsMain>
+        
+        <div class="background-main two"></div>
+        <SectionCardsMain
+          title="Paquetes y dependencias útiles"
+          route="contenido/paquetes">
+          {paquetes &&
+            paquetes
+              .slice(0, 3)
+              .map((item) => <CardRoutePackages item={item} />)}
+        </SectionCardsMain>
+        <div class="background-main three"></div>
+        <section class="cont-info">
+          <h1 class="title-info">Explora más...</h1>
+          <p class="text-info">
+            Míra todas las secciones que te ofrece este blog
+          </p>
+          <a href="/contenido" class="link-info">
+            Contenido
+          </a>
+        </section>
+      </section>
+      <Footer />
+    </main>
+</GlobalLayout>
+
+

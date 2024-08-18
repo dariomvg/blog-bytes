@@ -1,0 +1,25 @@
+.card-route-articulo {
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    background-color: #16181d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #3e038b;
+  }
+  .text-art {
+    color: #929292;
+    overflow-y: auto;
+  }
+  .link-articulo {
+    font-size: 18px;
+    text-decoration: none;
+    color: #1963ed;
+  }
+  .link-articulo:hover {
+    text-decoration: underline;
+  }
+  
