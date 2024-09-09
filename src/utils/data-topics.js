@@ -91,4 +91,29 @@ export const temas = [
     text: "Proceso de pensamiento y resolución de problemas aplicado al diseño de algoritmos y programas.",
     link: "https://ed.team/cursos/programacion",
   },
+  {
+    id: 16,
+    title: "Patrones de diseño en NodeJs",
+    text: "Patrones de diseños más utilizados y conocidos en el entorno de NodeJs",
+    link: "https://blog.bitsrc.io/nodejs-design-patterns-must-know-8ef0a73b3339",
+  },
+  {
+    id: 17,
+    title: "Typescript con Respuestas de API's",
+    text: "Aprende a tipar fetchs y respuestas de apis para un código más robusto",
+    link: "https://itnext.io/how-to-write-api-response-types-with-typescript-f8152ddd43dd",
+  },
+  {
+    id: 18,
+    title: "Patrones y buenas prácticas en react",
+    text: "Aprende a contruir buenas aplicaciones en react con buenas prácticas",
+    link: "https://javascript.plainenglish.io/building-a-better-react-application-with-repository-and-adapter-design-patterns-3e089f43fbc8",
+  },
+  {
+    id: 19,
+    title: "5 principios sobre hooks en react importantes",
+    text: "Principios de uso de hooks en react que te ayudarán a entender y hacer mejor código",
+    link: "https://code.likeagirl.io/learning-react-5-important-principles-about-hooks-you-have-to-know-4967cd9d4eb4",
+  },
 ];
+
