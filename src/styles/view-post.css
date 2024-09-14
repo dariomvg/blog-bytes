@@ -39,8 +39,8 @@
 
   code {
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    background-color: #333333;
     border-radius: 5px;
     color: #fff;
     padding: 10px;
@@ -55,5 +55,29 @@
   }
   strong {
     color: #eee;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  
+  th {
+    background-color: #000;
+    color: #fff; 
+    padding: 10px;
+  }
+  
+  td {
+    background-color: #eee; 
+    padding: 10px;
+    text-align: left; 
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+  }
+  
+  table tr {
+    border-bottom: 1px solid #ccc; 
   }
 }

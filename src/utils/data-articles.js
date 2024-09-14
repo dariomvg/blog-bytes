@@ -71,25 +71,59 @@ export const articulos = [
     title: "Automatización de Tareas con Gulp.js",
     link: "https://gulpjs.com/",
     text: "Cómo usar Gulp.js para automatizar tareas repetitivas en el desarrollo web.",
-  },{
+  },
+  {
     id: 13,
     title: "10 consejos sobre rendimiento en React Senior",
     link: "https://blog.stackademic.com/10-expert-performance-tips-every-senior-js-react-developer-should-know-b0c5c91dd0e8",
     text: "Consejos de rendimiento en react que todo senior debe saber",
-  },{
+  },
+  {
     id: 14,
     title: "Preguntas y código javascript de entrevistas",
     link: "https://blog.stackademic.com/14-javascript-interview-difficult-questions-and-code-implementation-3a72fdc54ecf",
     text: "Preguntas e implementaciones de código en entrevistas de javscript que te será de ayuda",
-  },{
+  },
+  {
     id: 15,
     title: "Herramientas para el desarrollo en react",
     link: "https://blog.bitsrc.io/top-10-tools-every-react-developer-needs-in-2024-b87631680e10",
     text: "Herramientas que todo desarrollador react necesitas para este 2024",
-  },{
-    id: 15,
+  },
+  {
+    id: 16,
     title: "Tips para la optimización en Nextjs",
     link: "https://blog.devgenius.io/performance-optimization-in-next-js-tips-and-techniques-d6b3ee154d89",
     text: "Tips y técnicas para mejorar el rendimiento y la optimización cuando desarrolles en next.js",
+  },
+  {
+    id: 17,
+    title: "Estrategias para refactorizar, reescribir y adoptar microfrontends",
+    link: "https://medium.com/syngenta-digitalblog/navigating-frontend-migration-strategies-for-refactoring-rewriting-and-embracing-microfrontends-331520cde2bb",
+    text: "tips que te ayudarán a tus proyectos para mejorar el rendimiento y accesiblidad o para un proyecto desde cero",
+  },
+  {
+    id: 18,
+    title: "Guía para arquitectura frontend",
+    link: "https://blog.bitsrc.io/micro-frontend-architecture-a-guide-28f78ce825ad",
+    text: "un guia para crear una arquitectura de una app front-end",
+  },
+  {
+    id: 19,
+    title: "Diseños de forms accesibles en 10 pasos",
+    link: "https://uxdesign.cc/how-to-design-accessible-forms-in-10-steps-22232d65de18",
+    text: "mira com crear formularios accesibles y fáciles de crear",
+  },
+  {
+    id: 20,
+    title: "Repositorios github de ayuda para nextJS",
+    link: "https://medium.com/@mdtaqui.jhar/6-repos-to-master-nextjs-d01672dbea7c",
+    text: "Ejemplos de usos y más para mejorar tu código nextJS y tus proyectos personales",
+  },
+  {
+    id: 21,
+    title: "¿Por qué nextJS revolucionó el desarrollo?",
+    link: "https://medium.com/@mitali_shah/why-is-next-js-15-revolutionizing-web-app-development-8164875d6f0d",
+    text: "explicación de cómo nextjs cambió el desarrollo web con sus nuevas ideas",
   },
 ];
