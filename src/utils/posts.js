@@ -29,4 +29,16 @@ export const posts = [
     url_redirect: "/posts/post/rendimiento",
     date: "11 Septiembre 2024"
   },
+  {
+    id: 6,
+    title: "Prueba técnica: ¿Cómo diseñar y crear un acortador de URL?",
+    url_redirect: "/posts/post/prueba-tecnica",
+    date: "26 Septiembre 2024"
+  },
+  {
+    id: 7,
+    title: "Estos son los pasos para inicializarse a Node.js para todos los niveles",
+    url_redirect: "/posts/post/pasos-nodejs",
+    date: "26 Septiembre 2024"
+  },
 ];
