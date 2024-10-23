@@ -61,7 +61,7 @@ export const posts = [
   },
   {
     id: 11,
-    title: "Guía completa para inciar en desarrollo web front-end y back-end",
+    title: "Guía completa para iniciar en desarrollo web front-end y back-end",
     url_redirect: "/posts/post/guia-desarrollo-web",
     date: "23 Octubre 2024"
   },
