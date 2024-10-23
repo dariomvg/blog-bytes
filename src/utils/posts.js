@@ -41,4 +41,28 @@ export const posts = [
     url_redirect: "/posts/post/pasos-nodejs",
     date: "26 Septiembre 2024"
   },
+  {
+    id: 8,
+    title: "Cómo comenzar a aportar a proyectos open-source",
+    url_redirect: "/posts/post/comenzar-en-opensource",
+    date: "9 Octubre 2024"
+  },
+  {
+    id: 9,
+    title: "Aprende typescript para proyectos más robustos y mejorar como programador",
+    url_redirect: "/posts/post/aprender-typescript",
+    date: "9 Octubre 2024"
+  },
+  {
+    id: 10,
+    title: "Herramientas de IA gratuitas para mejorar y acelerar el desarrollo",
+    url_redirect: "/posts/post/herramientas-ia",
+    date: "23 Octubre 2024"
+  },
+  {
+    id: 11,
+    title: "Guía completa para inciar en desarrollo web front-end y back-end",
+    url_redirect: "/posts/post/guia-desarrollo-web",
+    date: "23 Octubre 2024"
+  },
 ];
