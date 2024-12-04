@@ -65,4 +65,22 @@ export const posts = [
     url_redirect: "/posts/post/guia-desarrollo-web",
     date: "23 Octubre 2024"
   },
+  {
+    id: 12,
+    title: "Diferencias entre ingeniero de software y desarrollador de software",
+    url_redirect: "/posts/post/ingSoftware-vs-desSoftware",
+    date: "4 Diciembre 2024"
+  },
+  {
+    id: 13,
+    title: "Protocolos de red y códigos de estado más importantes que debes conocer",
+    url_redirect: "/posts/post/protocolos-de-red-y-codigos",
+    date: "4 Diciembre 2024"
+  },
+  {
+    id: 14,
+    title: "Implementación de el patron de arquitectura MVC(model-view-controller) en front-end y back-end",
+    url_redirect: "/posts/post/patron-arquitectura-mvc",
+    date: "4 Diciembre 2024"
+  },
 ];
