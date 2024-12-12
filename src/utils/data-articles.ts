@@ -1,4 +1,6 @@
-export const articulos = [
+import type { ArticlesTypes } from "../types/utils.types";
+
+export const articulos: ArticlesTypes[] = [
   {
     id: 1,
     title: "Pruebas de Rendimiento en Aplicaciones Web",

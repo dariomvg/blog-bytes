@@ -1,5 +1,8 @@
 ---
 import "../styles/card-topic.css"
+interface Props {
+    item: {title: string, text: string,link: string}
+}
   const { item } = Astro.props
   const { title, text, link } = item
 ---

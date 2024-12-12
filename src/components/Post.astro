@@ -1,5 +1,8 @@
 ---
 import "../styles/post.css";
+interface Props {
+    post: {title: string, date: string, url_redirect: string}
+}
 const { post } = Astro.props
 const {title, date, url_redirect} = post
 ---

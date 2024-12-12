@@ -1,4 +1,6 @@
-export const paquetes = [
+import type { PackagesTypes } from "../types/utils.types";
+
+export const paquetes: PackagesTypes[] = [
   {
     id: 1,
     title: "React Toastify",

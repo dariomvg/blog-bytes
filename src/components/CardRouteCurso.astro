@@ -1,6 +1,9 @@
 ---
 import "../styles/card-course.css";
 import { Image } from 'astro:assets';
+interface Props {
+    item: {title: string, text: string,link: string, autor: string, docs: string, icon: string}
+}
 const { item } = Astro.props
 const { title, autor, text, icon, link, docs } = item; 
 ---

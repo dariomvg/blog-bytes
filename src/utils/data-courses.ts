@@ -1,4 +1,6 @@
-export const cursos = [
+import type { CoursesTypes } from "../types/utils.types";
+
+export const cursos: CoursesTypes[] = [
   {
     id: 1,
     title: "Curso HTML5",

@@ -1,4 +1,6 @@
-export const temas = [
+import type { TopicsTypes } from "../types/utils.types";
+
+export const temas: TopicsTypes[] = [
   {
     id: 1,
     title: "Programación Orientada a Objetos",

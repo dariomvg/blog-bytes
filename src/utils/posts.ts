@@ -1,4 +1,6 @@
-export const posts = [
+import type { PostTypes } from "../types/utils.types";
+
+export const posts: PostTypes[] = [
   {
     id: 1,
     title: "Mejora el SEO de tu página o aplicación web",
