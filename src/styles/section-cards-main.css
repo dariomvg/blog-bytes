@@ -27,8 +27,10 @@
   justify-content: flex-end;
   padding: 10px;
   width: 100%;
+  transition: color .5s;
 }
 
 .link-more:hover {
+  transition: color .5s;
   color: #7899ff;
 }

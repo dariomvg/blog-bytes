@@ -35,9 +35,9 @@
 .link-curso {
   text-decoration: none;
   font-size: 18px;
-  color: #1963ed;
+  color: #fff;
   height: 20px;
 }
 .link-curso:hover {
-  color: #517EFF;
+  color: #95aff6;
 }

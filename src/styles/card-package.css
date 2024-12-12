@@ -24,9 +24,8 @@
   .link-paquete {
     font-size: 18px;
     text-decoration: none;
-    color: #1963ed;
+    color: #fff;
   }
   .link-paquete:hover {
-    color: #517EFF;
-
+    color: #95aff6;
   }

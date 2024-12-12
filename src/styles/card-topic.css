@@ -17,13 +17,12 @@
     overflow-y: hidden;
   }
   .link-tema {
-    
     font-size: 18px;
     text-decoration: none;
-    color: #1963ed;
+    color: #fff;
     height: 20px;
     text-align: center;
   }
   .link-tema:hover {
-    color: #517EFF;
+    color: #95aff6;
   }

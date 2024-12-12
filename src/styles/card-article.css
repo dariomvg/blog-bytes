@@ -17,9 +17,10 @@
   .link-articulo {
     font-size: 18px;
     text-decoration: none;
-    color: #1963ed;
+    color: #fff;
   }
   .link-articulo:hover {
     text-decoration: underline;
+    
   }
   
