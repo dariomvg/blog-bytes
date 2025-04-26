@@ -1,19 +1,17 @@
 ---
-import Header from "../components/Header.astro";
 import "../styles/view-post.css";
 import GlobalLayout from "./GlobalLayout.astro";
 
 interface Props {
-    frontmatter: {
         title: string; 
         description: string; 
-    }
+        keyboards: string
+    
 }
-const {title, description} = Astro.props.frontmatter
+const {title, description, keyboards} = Astro.props
 ---
 
-<GlobalLayout title={title} description={description}>
-    <Header />
+<GlobalLayout title={title} description={description} keyboards={keyboards}>
     <section class="container-post">
         <slot />
     </section>

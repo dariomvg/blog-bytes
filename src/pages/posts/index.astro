@@ -1,16 +1,27 @@
 ---
+export const prerender = false
+
 import { posts } from "../../utils/posts";
 import Post from "../../components/Post.astro";
 import "@styles/pages/posts.css";
 import GlobalLayout from "../../layouts/GlobalLayout.astro";
+
+// hacer el fetching de datos aca, traer los posts
+
 ---
 
-<GlobalLayout title="Posts | artículos" description= "Hay variedad de artículos o posts sobre diversos temas en desarrollo que te ayudarán el día a día.">
+<!-- Acá renderizar todos los posts,   -->
+<!-- cada post ir a /post/id: id del post   -->
+
+
+
+<GlobalLayout title="Posts | artículos" description= "Hay variedad de artículos o posts sobre diversos temas en desarrollo que te ayudarán el día a día." keyboards="artículos, desarrollo web, programación, tecnología">
             <section class="section-posts"> 
             <h1 class="title-posts">Posts sobre tecnología</h1>
             <section class="container-posts">
                 {posts.map((post) => <Post post={post} />)}
             </section>
             <p class="title-prox">proxímamente más</p>
+            <a href="/posts/post/products">Click here</a>
         </section>
 </GlobalLayout>

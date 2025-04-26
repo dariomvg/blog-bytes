@@ -1,0 +1,28 @@
+---
+import ArticlesLayout from "src/layouts/ArticlesLayout.astro";
+
+export const prerender = false
+
+const { id } = Astro.params;
+const post = {
+    id: 1, 
+    title: "",
+    description: "",
+    keyboards: "",
+    content: "",
+    created_at: ""
+}
+ // crear el fetch para buscar el articulo por el id, debe pasarle el user_id
+if (!id) return Astro.redirect("/404");
+
+---
+
+<!-- el [id] va a filtrar el post, obtiene el content(convertir a html) y metadatos por props -->
+
+<ArticlesLayout title={post.title} description={post.description} keyboards={post.keyboards}>
+    <div>
+        <strong>{post.created_at}</strong>
+        <a href="/posts" class="return-page">Regresar a posts</a>
+    </div>
+    <section set:html={post.content} />
+</ArticlesLayout>
