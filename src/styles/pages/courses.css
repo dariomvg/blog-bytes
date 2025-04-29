@@ -4,14 +4,6 @@
   padding-top: 70px;
   color: #fff;
 }
-.section-filters {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  padding: 14px;
-}
 
 .title-courses {
   text-align: center;
@@ -21,30 +13,7 @@
 .all-courses {
   width: 80%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 14px;
-  padding: 10px;
-}
-
-.input {
-  border: 2px solid #fff;
-  padding: 8px;
-  border-radius: 5px;
-  background-color: transparent;
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-}
-.input:focus {
-  border-color:#517EFF;
-
-}
-.input::placeholder {
-  color: #fff;
-  font-size: 16px;
-  color: #929292;
-
 }

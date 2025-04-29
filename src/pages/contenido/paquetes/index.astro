@@ -4,7 +4,7 @@ import "@styles/content/packages.css";
 import ContentLayout from "../../../layouts/ContentLayout.astro";
 import CardRoutePackages from "../../../components/CardRoutePackages.astro";
 ---
-<ContentLayout title="Contenido | Paquetes " description="Lista de paquetes">
+<ContentLayout title="Contenido | Paquetes " description="Lista de paquetes" keyboards="contenido, paquetes, npm, tecnología">
       <section class="section-routes-packages">
         {paquetes && paquetes.map((item) => <CardRoutePackages  item={item} />)}
     </section>

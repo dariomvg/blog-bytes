@@ -1,5 +1,5 @@
 .card-route-tema {
-    width: 300px;
+    width: 100%;
     height: 200px;
     background-color: #16181d;
     border-radius: 10px;
@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: #fff;
-    border: 1px solid #3e038b;
+    border: 1px solid #aaa;
 
   }
 
@@ -22,7 +22,10 @@
     color: #fff;
     height: 20px;
     text-align: center;
+    transition: .5s;
+
   }
   .link-tema:hover {
-    color: #95aff6;
+    transition: .5s;
+    color: #0dbbdd;
   }

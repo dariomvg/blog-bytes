@@ -1,11 +1,10 @@
 .section-routes-courses {
     width: 100%;
     padding: 80px 10px 10px 10px;
-    display: flex;
+    display: grid;
     gap: 14px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
   }
   
   @media (max-width: 795px) {

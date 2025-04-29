@@ -5,7 +5,7 @@ import ContentLayout from "../../../layouts/ContentLayout.astro";
 import "@styles/content/topics.css";
 ---
 
-<ContentLayout title="Contenido | Temas" description="Lista de temas">
+<ContentLayout title="Contenido | Temas" description="Lista de temas" keyboards="contenido, temas, tecnología, debates">
       <section class="section-routes-topics">
       {temas &&
         temas.map((item) => <CardRouteTemas item={item} />)}

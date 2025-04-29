@@ -1,11 +1,10 @@
 .section-routes-topics {
     width: 100%;
     padding: 80px 10px 10px 10px;
-    display: flex;
-    gap: 14px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 14px ;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
   }
   
   @media (max-width: 795px) {

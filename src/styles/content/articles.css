@@ -1,9 +1,8 @@
 .section-routes-articles {
   width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     gap: 12px;
     padding: 80px 10px 10px 10px;
 }

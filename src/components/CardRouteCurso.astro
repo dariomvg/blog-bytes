@@ -1,35 +1,41 @@
 ---
 import "../styles/card-course.css";
-import { Image } from 'astro:assets';
 interface Props {
-    item: {title: string, text: string,link: string, autor: string, docs: string, icon: string}
+    item: {
+      id: number;
+      title: string;
+      text: string;
+      link: string;
+      autor: string;
+      docs: string;
+      icon: string;
+      name: string;
+    }
 }
 const { item } = Astro.props
-const { title, autor, text, icon, link, docs } = item; 
 ---
 
 
     <div class="card-route-curso">
-        <div class="details-curso">
-          <h2 class="title-curso">{title}</h2>
-          {icon ? (
-            <Image
-              src={icon}
-              alt={title}
+        <div class="details-course">
+          <h2 class="title-curso">{item.title}</h2>
+          {item.icon && <img
+              src={item.icon}
+              alt={item.title}
               width={30}
               height={30}
               class="icon-curso"
               loading="lazy"
             />
-          ) : null}
+          }
         </div>
-        <p class="autor-curso"><b>Autor:</b> {autor}</p>
-        <p class="text-curso">{text}</p>
+        <p class="autor-curso"><b>Autor:</b> {item.autor}</p>
+        <p class="text-curso">{item.text}</p>
         <div class="links-curso">
-          <a href={docs} target="_BLANK" class="link-curso">
+          <a href={item.docs} target="_BLANK" class="link-curso">
             Documentación
           </a>
-          <a href={link} target="_BLANK" class="link-curso">
+          <a href={item.link} target="_BLANK" class="link-curso">
             Curso
           </a>
         </div>

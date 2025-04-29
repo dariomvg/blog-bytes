@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #989898;
 }
 .post-header-title {
@@ -33,3 +33,10 @@
     border-color: #2b70f0; 
 }
 
+@media (max-width: 425px) {
+    .post {
+        flex-direction: column;
+    }
+    
+  }
+  

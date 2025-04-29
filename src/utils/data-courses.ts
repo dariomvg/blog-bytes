@@ -44,7 +44,7 @@ export const cursos: CoursesTypes[] = [
   {
     id: 5,
     title: "SQL",
-    text: " Un lenguaje estándar para gestionar bases de datos relacionales. Se utiliza para realizar consultas, actualizaciones y modificaciones en bases de datos.",
+    text: "Un lenguaje estándar para gestionar bases de datos relacionales. Se utiliza para realizar consultas, actualizaciones y modificaciones en bases de datos.",
     icon: "https://res.cloudinary.com/duyiov4s1/image/upload/v1715630710/icons/eboqm8wgoemsocki1uay.png",
     link: "https://www.youtube.com/watch?v=DFg1V-rO6Pg&t=18s",
     docs: "https://sqlbolt.com/",
@@ -257,7 +257,7 @@ export const cursos: CoursesTypes[] = [
     id: 26,
     title: "Github Actions",
     text: "Una característica de GitHub que permite automatizar flujos de trabajo en tus repositorios. Puedes crear, probar y desplegar tu código directamente desde GitHub",
-    icon: "",
+    icon: "https://res.cloudinary.com/duyiov4s1/image/upload/v1715640749/icons/tgtibq4acvpmnuihxrxh.svg",
     link: "https://youtu.be/pNtcTmCiXzw?si=UCKSFgvr5FcSFZqI",
     docs: "https://github.com/features/actions",
     name: "github actions",

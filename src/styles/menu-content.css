@@ -29,14 +29,16 @@
   border-radius: 10px;
   text-decoration: none;
   padding: 14px;
-  color: #1963ed;
+  color: #0dbbdd;
 }
 .link-category:hover {
-  color: #517EFF;
+  color: #2dd0f1;
 }
+
 .link-category.active {
   background-color: #dfdfd6;
   font-weight: bold;
+  color: #167183;
 }
 
 @media (max-width: 768px) {

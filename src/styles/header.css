@@ -3,19 +3,22 @@
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
   flex-wrap: wrap;
   gap: 50px;
   padding: 10px;
   transition: all 0.5s;
   position: fixed;
   z-index: 999;
-  background-color: #1b1d24;
+  background-color: #00000087;
+  backdrop-filter: blur(10px);
 }
 .logo {
   text-decoration: none;
   font-size:24px;
   font-weight: bold;
-  background-image: linear-gradient(to right, #1963ed,#EC4DB4);
+  background-image: linear-gradient(to right, #29bc6e,#0dbbdd);
   background-clip: text;
   color: transparent;
 }
@@ -40,30 +43,29 @@
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
+  transition: .5s;
+
 }
 .nav-link:hover {
-  color: #517EFF;
-  border-bottom: 1px solid #517EFF;
-  transition:all .5s;
+  color: #0dbbdd;
+  transition: .5s;
 }
 
 .header.open {
-  height: 250px;
+  height: 230px;
 }
 .header.open .navbar {
   visibility: visible;
   opacity: 1;
-  transition: all 1.5s;
+  transition: 1.5s;
 }
 
-@media (max-width: 678px) {
+@media (max-width: 425px) {
   .header {
     justify-content: space-between;
     padding: 10px;
-    border: 1px solid #000;
     height: 60px;
-    gap: 5px;
-    transition: all 0.5s;
+    transition: 0.5s;
   }
   .img-menu {
     display: flex;

@@ -13,8 +13,6 @@ import { Image } from 'astro:assets';
 import "@styles/pages/main.css"
 ---
 
-<script src="../libs/typeWriter.js" />
-
 <GlobalLayout title="Bytes - cursos, artículos, paquetes NPM de ayuda" description="Blog donde podrás encontrar cursos, temas, artículos y más sobre desarrollo web y programación que te ayudarán en tu camino de aprendizaje" keyboards="Desarrollo web, React, JavaScript, Programación, Artículos">
     <main class="container-home">
       <section class="cont-home">
@@ -22,7 +20,7 @@ import "@styles/pages/main.css"
           <h1 class="title-home">
             Blog sobre programación y desarrollo web
           </h1>
-          <div class="efects_titles">
+          <div class="effects_titles">
             <h1 id="text"></h1><span id="cursor" class="cursor">|</span>
           </div>
           <p class="text-home">
@@ -44,14 +42,14 @@ import "@styles/pages/main.css"
       <section class="cont-details">
         <h2 class="subtitle-home">Algunas secciones dentro del blog</h2>
 
-        <SectionCardsMain title="Cursos" route="cursos">
+        <SectionCardsMain title="Cursos">
           {cursos &&
             cursos
               .slice(0, 3)
               .map((item) => <CardRouteCurso item={item} />)}
         </SectionCardsMain>
 
-        <SectionCardsMain title="Temas" route="temas">
+        <SectionCardsMain title="Temas">
           {temas &&
             temas
               .slice(0, 3)
@@ -61,7 +59,7 @@ import "@styles/pages/main.css"
         <div class="background-main two"></div>
         <SectionCardsMain
           title="Paquetes y dependencias útiles"
-          route="contenido/paquetes">
+          >
           {paquetes &&
             paquetes
               .slice(0, 3)
@@ -82,4 +80,4 @@ import "@styles/pages/main.css"
     </main>
 </GlobalLayout>
 
-
+<script src="../libs/typeWriter.js" />

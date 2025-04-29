@@ -1,5 +1,5 @@
 .card-route-curso {
-  width: 300px;
+  width: 100%;
   height: 200px;
   background-color: #16181d;
   border-radius: 10px;
@@ -8,11 +8,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid  #3e038b;
+  align-items: center;
+  border: 1px solid  #aaa;
 
 }
 
-.details-curso {
+.details-course {
+  width: 100%; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,14 +32,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+
 }
 .link-curso {
   text-decoration: none;
   font-size: 18px;
   color: #fff;
-  height: 20px;
+    transition: .5s;
+    height: 20px;
 }
 .link-curso:hover {
-  color: #95aff6;
+    transition: .5s;
+    color: #0dbbdd;
 }

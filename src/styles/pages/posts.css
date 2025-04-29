@@ -35,3 +35,12 @@
         width: 100%;
     }
 }
+
+@media (max-width: 425px) {
+    .title-posts {
+        text-align: start;
+       padding: 10px 10px 20px 0px;
+    }
+
+  }
+  

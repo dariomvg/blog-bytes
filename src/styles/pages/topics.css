@@ -15,11 +15,8 @@
 .all-topics {
   width: 80%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 14px;
-  padding: 10px;
 }
 
