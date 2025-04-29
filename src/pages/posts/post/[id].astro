@@ -1,28 +1,35 @@
 ---
-import ArticlesLayout from "src/layouts/ArticlesLayout.astro";
-
 export const prerender = false
+import iconBack from "../../../assets/icons/icon-back.svg"; 
+import ArticlesLayout from "src/layouts/ArticlesLayout.astro";
+import {marked} from "marked";
+import {url_api, user_id} from "../../../utils/options";
 
 const { id } = Astro.params;
-const post = {
-    id: 1, 
-    title: "",
-    description: "",
-    keyboards: "",
-    content: "",
-    created_at: ""
+interface Post {
+    id: number;
+    title: string;
+    description: string;
+    keyboards: string;
+    content: string;
+    created_at: string;
 }
- // crear el fetch para buscar el articulo por el id, debe pasarle el user_id
-if (!id) return Astro.redirect("/404");
 
+const result = await fetch(`${url_api}/post?id=${id}&user_id=${user_id}`)
+const post: Post = await result.json(); 
+const html = marked.parse(post[0].content); 
+if(!html) {
+    return Astro.redirect("/posts")
+}
 ---
 
-<!-- el [id] va a filtrar el post, obtiene el content(convertir a html) y metadatos por props -->
-
-<ArticlesLayout title={post.title} description={post.description} keyboards={post.keyboards}>
-    <div>
-        <strong>{post.created_at}</strong>
-        <a href="/posts" class="return-page">Regresar a posts</a>
+<ArticlesLayout title={post[0].title} description={post[0].description} keyboards={post[0].keyboards}>
+    <div class="container-header-post">
+        <div class="container-link-return">
+            <img src={iconBack.src} alt="icon back" width={20} height={20} />
+            <a href="/posts" class="return-page">Regresar a posts</a>
+        </div>
+        <strong>{post[0].created_at}</strong>
     </div>
-    <section set:html={post.content} />
+    <section set:html={html} />
 </ArticlesLayout>

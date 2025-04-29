@@ -1,11 +1,26 @@
+.return-page {
+  color: #ffffff;
+  text-decoration: none;
+}
+.container-header-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 14px
+}
+
+.container-link-return {
+  display: flex;
+  align-items: center;
+}
+
 .container-post {
   padding: 80px 10px 10px 10px;
   width: 70%;
   height: 100vh;
   overflow-y: auto;
   margin: auto;
-.return-page {
-  color: rgb(255, 255, 255);
 }
   h1 {
     color: #fff;
@@ -25,6 +40,7 @@
 
   li {
     color: #ddd;
+    margin-bottom: 8px;
   }
 
   p {
@@ -42,8 +58,10 @@
     flex-direction: column;
     gap: 10px;
     border-radius: 5px;
-    color: #fff;
+    color: #cacff8;
     padding: 10px;
+    background-color: #0f111e;
+    border-radius: 5px;
   }
 
   pre {
@@ -80,4 +98,8 @@
   table tr {
     border-bottom: 1px solid #ccc; 
   }
-}
+
+
+  hr {
+    margin: 14px 0
+  }

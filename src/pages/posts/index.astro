@@ -1,19 +1,16 @@
 ---
 export const prerender = false
 
-import { posts } from "../../utils/posts";
 import Post from "../../components/Post.astro";
 import "@styles/pages/posts.css";
 import GlobalLayout from "../../layouts/GlobalLayout.astro";
+import {url_api, user_id} from "../../utils/options";
 
-// hacer el fetching de datos aca, traer los posts
-
+const api = `${url_api}/${user_id}`
+console.log(api)
+const result = await fetch(`${url_api}/posts/${user_id}`);
+const posts = await result.json(); 
 ---
-
-<!-- Acá renderizar todos los posts,   -->
-<!-- cada post ir a /post/id: id del post   -->
-
-
 
 <GlobalLayout title="Posts | artículos" description= "Hay variedad de artículos o posts sobre diversos temas en desarrollo que te ayudarán el día a día." keyboards="artículos, desarrollo web, programación, tecnología">
             <section class="section-posts"> 
@@ -21,7 +18,5 @@ import GlobalLayout from "../../layouts/GlobalLayout.astro";
             <section class="container-posts">
                 {posts.map((post) => <Post post={post} />)}
             </section>
-            <p class="title-prox">proxímamente más</p>
-            <a href="/posts/post/products">Click here</a>
         </section>
 </GlobalLayout>
