@@ -1,22 +1,12 @@
 ---
-export const prerender = false
-
-import Post from "../../components/Post.astro";
-import "@styles/pages/posts.css";
+import ListPosts from "../../components/ListPosts";
 import GlobalLayout from "../../layouts/GlobalLayout.astro";
-import {url_api, user_id} from "../../utils/options";
-
-const api = `${url_api}/${user_id}`
-console.log(api)
-const result = await fetch(`${url_api}/posts/${user_id}`);
-const posts = await result.json(); 
 ---
 
-<GlobalLayout title="Posts | artículos" description= "Hay variedad de artículos o posts sobre diversos temas en desarrollo que te ayudarán el día a día." keyboards="artículos, desarrollo web, programación, tecnología">
-            <section class="section-posts"> 
-            <h1 class="title-posts">Posts sobre tecnología</h1>
-            <section class="container-posts">
-                {posts.map((post) => <Post post={post} />)}
-            </section>
-        </section>
+<GlobalLayout 
+title="Posts | artículos" 
+description= "Hay variedad de artículos o posts sobre diversos temas en desarrollo que te ayudarán el día a día." 
+keyboards="artículos, desarrollo web, programación, tecnología">
+
+    <ListPosts client:load />
 </GlobalLayout>

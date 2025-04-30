@@ -1,35 +1,17 @@
 ---
-export const prerender = false
-import iconBack from "../../../assets/icons/icon-back.svg"; 
-import ArticlesLayout from "src/layouts/ArticlesLayout.astro";
-import {marked} from "marked";
-import {url_api, user_id} from "../../../utils/options";
-
+import ViewPost from "../../../components/ViewPost";
+import ArticlesLayout from "../../../layouts/ArticlesLayout.astro";
+import { url_api, user_id } from "../../../utils/options";
 const { id } = Astro.params;
-interface Post {
-    id: number;
-    title: string;
-    description: string;
-    keyboards: string;
-    content: string;
-    created_at: string;
-}
-
-const result = await fetch(`${url_api}/post?id=${id}&user_id=${user_id}`)
-const post: Post = await result.json(); 
-const html = marked.parse(post[0].content); 
-if(!html) {
-    return Astro.redirect("/posts")
-}
+const result = await fetch(`${url_api}/post?id=${id}&user_id=${user_id}`);
+const post = await result.json();
 ---
 
-<ArticlesLayout title={post[0].title} description={post[0].description} keyboards={post[0].keyboards}>
-    <div class="container-header-post">
-        <div class="container-link-return">
-            <img src={iconBack.src} alt="icon back" width={20} height={20} />
-            <a href="/posts" class="return-page">Regresar a posts</a>
-        </div>
-        <strong>{post[0].created_at}</strong>
-    </div>
-    <section set:html={html} />
+<ArticlesLayout 
+    title={post[0].title} 
+    description={post[0].description} 
+    keyboards={post[0].keyboards}>
+
+    <ViewPost client:load post={post[0]} />
+
 </ArticlesLayout>
