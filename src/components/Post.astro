@@ -1,0 +1,18 @@
+---
+import "../styles/post.css";
+interface Props {
+    post: {title: string, created_at: string, id: string}
+}
+const { post } = Astro.props
+const {id, created_at, title} = post
+---
+
+<article class="post">
+    <div class="post-header-title">
+      <h2 class="title-post">{title}</h2>
+      <p class="date-post">{created_at}</p>
+    </div>
+    <a href={`/posts/post/${id}`} class="link-post">
+      Visitar
+    </a>
+  </article>

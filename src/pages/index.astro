@@ -6,7 +6,6 @@ import  CardRouteCurso  from "../components/CardRouteCurso.astro"
 import  CardRouteTemas  from "../components/CardRouteTemas.astro"
 import  CardRoutePackages  from "../components/CardRoutePackages.astro"
 import { temas } from "../utils/data-topics"
-import { cursos } from "../utils/data-courses"
 import { paquetes } from "../utils/data-packages"
 import imgFondo from "../assets/images/mockup.svg"
 import { Image } from 'astro:assets';
@@ -41,13 +40,6 @@ import "@styles/pages/main.css"
 
       <section class="cont-details">
         <h2 class="subtitle-home">Algunas secciones dentro del blog</h2>
-
-        <SectionCardsMain title="Cursos">
-          {cursos &&
-            cursos
-              .slice(0, 3)
-              .map((item) => <CardRouteCurso item={item} />)}
-        </SectionCardsMain>
 
         <SectionCardsMain title="Temas">
           {temas &&
